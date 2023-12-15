@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#f7eded81;
+    justify-content: center;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.todo-container {
+    background-color: rgba(238, 243, 224, 0.748);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input,
+textarea {
+    margin: 5px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 8px 15px;
+    background-color: #0960a8; /* Blue color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b7f0f; /* Darker blue on hover */
+}
+
+.tasks-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px; /* Add space between pending and completed tasks */
+}
+
+.tasks-column {
+    flex: 1;
+    padding: 20px; /* Add more padding to each column */
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow-y: auto;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px; /* Add margin below the heading */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px; /* Add more space between tasks */
+    padding: 15px; /* Add more padding to each task */
+    background-color: #e0f7fa;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack text and description vertically */
+    align-items: center;
+}
+
+span {
+    margin-bottom: 5px; /* Add margin below the task name */
+}
+
+.delete-button,
+.complete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.delete-button:hover,
+.complete-button:hover {
+    background-color: #ffcc00; /* Yellow color on hover */
+    color: #333; /* Change text color to contrast with yellow background */
+}
